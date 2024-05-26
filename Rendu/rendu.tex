@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage{listings}
 \usepackage{amsmath}
 \usepackage{float} % Pour placer les images exactement où elles sont spécifiées
@@ -49,11 +50,11 @@
     \includegraphics[width=0.3\textwidth]{EILCO-LOGO-2022.png}\par\vspace{1cm}
     {\scshape\LARGE école d'Ingénieurs du Littoral-Côte-d'Opale\par}
     \vspace{1cm}
-    {\scshape\Large TP : Réseaux industriels et supervision\par} 
+    {\scshape\Large TP : Réseaux industriels et supervision \par} 
     \vspace{1.5cm}
-    {\huge\bfseries  Interface Pygame\par}
+    {\huge\bfseries Interface Pygame\par}
     \vspace{0.5cm}
-    \includegraphics[width=0.4\textwidth]{logo.png}\par
+    \includegraphics[width=0.4\textwidth]{pygame.png}\par
     \vspace{1.5cm}
     {\Large\itshape\textbf{Auteur:} Fono Colince\par}
     \vfill
@@ -70,43 +71,123 @@
         \end{flushright}
     \end{minipage}
     \vfill
-    \vspace{1cm}
+    \vspace{0.5cm}
+    \begin{center}
+        Vous pouvez trouver le code source complet du projet sur GitHub à l'adresse suivante : \\
+        \url{https://github.com/Fonocol/pygame/}\\
+        Vous pouvez également visionner une vidéo de démonstration de la simulation de réservoir de liquide en suivant ce lien : \\
+        \url{https://github.com/Fonocol/pygame/raw/main/Assetes/video.mp4}
+    \end{center}
 \end{titlepage}
 
 \clearpage
-
 \tableofcontents  % Table des matières
-
 \clearpage
 % ------------------------------------------------------------------------------------
 
 \section{Introduction}
 \begin{quote}
-    Dans ce TP, vous allez utiliser un simulateur d'automate qui simulera un automatisme industriel. Vous allez ensuite communiquer avec cet automate en utilisant le protocole Modbus pour produire une supervision.
+    Dans ce TP, nous avons développé une interface de simulation de réservoir de liquide en utilisant Pygame. Cette interface simule un système de contrôle industriel et permet de visualiser le niveau de liquide dans le réservoir, ainsi que de contrôler différents composants du système.
 \end{quote}
 
-\section{ interface personnelle}
+\section{Interface Pygame}
 
-\section{Pendant le cycle de remplissage}
+\subsection{Interface principale}
 
-\section{Pendant le cycle de vidange}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{interface_principale.png}
+    \caption{Interface principale de la simulation de réservoir de liquide}
+    \label{fig:interface_principale}
+\end{figure}
 
+% Commentaire sur l'interface principale
+Dans cette interface, l'utilisateur peut lancer une simulation en cliquant sur le bouton SART ou QUIT pour quiter la simulation
+
+\subsection{Cycle de remplissage}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{cycle_remplissage.png}
+
+    \caption{Vue pendant le cycle de remplissage du réservoir de liquide.}
+    \label{fig:cycle_remplissage}
+\end{figure}
+
+% Commentaire sur le cycle de remplissage
+Cette image montre le réservoir de liquide pendant le cycle de remplissage, où le niveau de liquide augmente progressivement jusqu'à atteindre la capacité maximale du réservoir.
+
+\subsection{Cycle de vidange}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{cycle_vidange.png}
+
+    \caption{Vue pendant le cycle de vidange du réservoir de liquide.}
+    \label{fig:cycle_vidange}
+\end{figure}
+
+% Commentaire sur le cycle de vidange
+Dans cette image, on peut observer le réservoir de liquide pendant le cycle de vidange, où le niveau de liquide diminue progressivement jusqu'à ce que le réservoir soit complètement vidé.
+\clearpage
 \section{Annexe}
-\subsection{La liste des icônes créé}
 
+\subsection{La liste des icônes créées}
+
+% Description des icônes utilisées
+Dans notre interface, nous avons utilisé plusieurs icônes pour représenter différents états des composants. Voici les icônes utilisées :
+\begin{itemize}
+    \item \textbf{Icône représentant une Ampoule activé:}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\textwidth]{../Assetes/Aon.png}
+    \end{figure}
+    
+    \item \textbf{Icône représentant une Ampoule désactivé:}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\textwidth]{../Assetes/Aoff.png}
+    \end{figure}
+    
+    \item \textbf{Icône représentant une roue:}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\textwidth]{../Assetes/roue.png}
+    \end{figure}
+\end{itemize}
 
 \subsection{Un diagramme des classes}
 
-\subsection{ Vos codes sources}
+% Commentaire sur l'absence de POO
+Il est à noter que nous n'avons pas utilisé de programmation orientée objet (POO) dans ce projet, car la structure du code ne le nécessitait pas. Nous avons plutôt utilisé une approche procédurale pour développer l'interface de simulation.
 
+\clearpage
+\subsection{codes sources}
+
+\subsubsection{sources}
+% Ajout du lien vers le code source sur GitHub
+\begin{center}
+    Vous pouvez trouver le code source complet du projet sur GitHub à l'adresse suivante : \\
+\url{https://github.com/Fonocol/pygame/}\\
+\vspace{1cm}
+% Ajout du lien vers la vidéo de démonstration
+Vous pouvez également visionner une vidéo de démonstration de la simulation de réservoir de liquide en suivant ce lien : \\
+\url{https://github.com/Fonocol/pygame/raw/main/Assetes/video.mp4}
+\end{center}
+
+\clearpage
+\subsubsection{code python}
+% Ajout du code source
 \lstinputlisting[
     language=python,
-    caption={.},
-    label={lst:heaviside},
+    caption={Code source de la simulation de réservoir de liquide.},
+    label={lst:liquide.py},
     mathescape=true,
     firstline=1,
-    lastline=210 
-]{../liquide.py}
+    lastline=317 
+]{liquide.py}
+%https://github.com/Fonocol/pygame/raw/main/Assetes/video.mp4
+%\href{https://github.com/Fonocol/pygame/raw/main/Assetes/video.mp4}
 
 
 \end{document}

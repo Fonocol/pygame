@@ -1,8 +1,11 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2} interface personnelle}{2}{}%
-\contentsline {section}{\numberline {3}Pendant le cycle de remplissage}{2}{}%
-\contentsline {section}{\numberline {4}Pendant le cycle de vidange}{2}{}%
-\contentsline {section}{\numberline {5}Annexe}{2}{}%
-\contentsline {subsection}{\numberline {5.1}La liste des icônes créé}{2}{}%
-\contentsline {subsection}{\numberline {5.2}Un diagramme des classes}{2}{}%
-\contentsline {subsection}{\numberline {5.3} Vos codes sources}{2}{}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Interface Pygame}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Interface principale}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Cycle de remplissage}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Cycle de vidange}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Annexe}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}La liste des icônes créées}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Un diagramme des classes}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}codes sources}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}sources}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}code python}{7}{subsubsection.3.3.2}%

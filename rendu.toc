@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2} interface personnelle}{2}{}%
-\contentsline {section}{\numberline {3}Pendant le cycle de remplissage}{2}{}%
-\contentsline {section}{\numberline {4}Pendant le cycle de vidange}{2}{}%
-\contentsline {section}{\numberline {5}Annexe}{2}{}%
-\contentsline {subsection}{\numberline {5.1}La liste des icônes créé}{2}{}%
-\contentsline {subsection}{\numberline {5.2}Un diagramme des classes}{2}{}%
-\contentsline {subsection}{\numberline {5.3} Vos codes sources}{2}{}%

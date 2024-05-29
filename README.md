@@ -4,7 +4,7 @@
 
 ## Interface Pygame
 
-![pygame](pygame.png)
+![pygame](py.png)
 
 ### Date
 29 Mai 2024
@@ -35,21 +35,21 @@ Vous pouvez également visionner une vidéo de démonstration de la simulation d
 
 ### Interface principale
 
-![Interface principale](interface_principale.png)
+![Interface principale](1.png)
 *Figure 1 : Interface principale de la simulation de réservoir de liquide.*
 
 Dans cette interface, l'utilisateur peut lancer une simulation en cliquant sur le bouton START ou quitter la simulation en cliquant sur QUIT.
 
 ### Cycle de remplissage
 
-![Cycle de remplissage](cycle_remplissage.png)
+![Cycle de remplissage](2.png)
 *Figure 2 : Vue pendant le cycle de remplissage du réservoir de liquide.*
 
 Cette image montre le réservoir de liquide pendant le cycle de remplissage, où le niveau de liquide augmente progressivement jusqu'à atteindre la capacité maximale du réservoir.
 
 ### Cycle de vidange
 
-![Cycle de vidange](cycle_vidange.png)
+![Cycle de vidange](3.png)
 *Figure 3 : Vue pendant le cycle de vidange du réservoir de liquide.*
 
 Dans cette image, on peut observer le réservoir de liquide pendant le cycle de vidange, où le niveau de liquide diminue progressivement jusqu'à ce que le réservoir soit complètement vidé.
